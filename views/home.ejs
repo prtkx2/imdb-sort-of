@@ -1,0 +1,21 @@
+<% include /home/pratik/Desktop/projects/imdb-clone/partials/header.ejs%>
+<div class="container-fluid"><h4>TRENDING</h4><hr style="margin-top:.1rem"></div>
+<div class="container-fluid">
+    <div class ="row" >
+        <% trending["results"].forEach(function(movie){%>
+            <div class ="column">
+                <div class="card border-primary " style="max-width: 15rem; margin: 8px; display:flex; flex-wrap: wrap">
+                    <img src= "https://image.tmdb.org/t/p/w185_and_h278_bestv2<%=movie["poster_path"]%>" class="card-img-top"/>
+                    <h4 class="card-header text-center bg-transparent" ><%=movie["title"]%><br>(<%=movie.release_date%>)</h4>
+                   <div class="card-body">
+                        <p class="card-text"><%=movie["overview"]%></p>
+                   </div> 
+                    <!--<div class="card-footer text-center bg-transparent"><%=movie.release_date%></div>-->
+                </div>
+            </div>
+        <%})%> 
+    </div>
+</div>
+
+
+<% include /home/pratik/Desktop/projects/imdb-clone/partials/footer.ejs%>

@@ -1,0 +1,19 @@
+{
+  "name": "imdb-clone",
+  "version": "1.0.0",
+  "description": "imdb duplicate",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Pratik",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "ui": "^0.2.4"
+  }
+}
